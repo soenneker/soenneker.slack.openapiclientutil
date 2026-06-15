@@ -44,8 +44,8 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Kiota.GenericAuthenticationProvider" Version="4.0.34" />
-        <!--<PackageReference Include="Soenneker.Slack.HttpClients" Version="4.0.1" />
-        <PackageReference Include="Soenneker.Slack.OpenApiClient" Version="4.0.2" />-->
-        <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.789" />
+        <PackageReference Include="Soenneker.Slack.HttpClients" Version="4.0.3" />
+        <PackageReference Include="Soenneker.Slack.OpenApiClient" Version="4.0.3" />
+        <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.796" />
     </ItemGroup>
 </Project>
