@@ -10,3 +10,9 @@
 ```
 dotnet add package Soenneker.Slack.OpenApiClientUtil
 ```
+
+The parameterless `Get()` uses `Slack:ApiKey` and `Slack:ClientBaseUrl`. Pass connection values explicitly to work with multiple Slack tenants:
+
+```csharp
+SlackOpenApiClient tenantClient = await slackOpenApiClientUtil.Get(tenantApiKey, tenantBaseUrl);
+```
