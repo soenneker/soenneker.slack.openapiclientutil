@@ -6,12 +6,12 @@ using Soenneker.Slack.OpenApiClientUtil.Abstract;
 namespace Soenneker.Slack.OpenApiClientUtil.Registrars;
 
 /// <summary>
-/// Registers the OpenAPI client utility for dependency injection.
+/// Registers lazily initialized Slack API clients.
 /// </summary>
 public static class SlackOpenApiClientUtilRegistrar
 {
     /// <summary>
-    /// Adds <see cref="SlackOpenApiClientUtil"/> as a singleton service. <para/>
+    /// Adds the Slack API client utility as a singleton service. <para/>
     /// </summary>
     public static IServiceCollection AddSlackOpenApiClientUtilAsSingleton(this IServiceCollection services)
     {
@@ -22,7 +22,7 @@ public static class SlackOpenApiClientUtilRegistrar
     }
 
     /// <summary>
-    /// Adds <see cref="SlackOpenApiClientUtil"/> as a scoped service. <para/>
+    /// Adds the Slack API client utility as a scoped service backed by the singleton HTTP client provider. <para/>
     /// </summary>
     public static IServiceCollection AddSlackOpenApiClientUtilAsScoped(this IServiceCollection services)
     {
