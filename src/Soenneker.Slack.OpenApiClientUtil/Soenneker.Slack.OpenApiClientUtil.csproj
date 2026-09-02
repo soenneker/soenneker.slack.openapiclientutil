@@ -44,6 +44,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Slack.HttpClients" Version="4.0.80" />
-        <PackageReference Include="Soenneker.Slack.OpenApiClient" Version="4.0.38" />
+        <PackageReference Include="Soenneker.Slack.OpenApiClient" Version="4.0.39" />
     </ItemGroup>
 </Project>
