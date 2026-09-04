@@ -14,6 +14,7 @@ using Soenneker.Slack.OpenApiClient;
 
 namespace Soenneker.Slack.OpenApiClientUtil;
 
+/// <inheritdoc cref="ISlackOpenApiClientUtil" />
 public sealed class SlackOpenApiClientUtil : ISlackOpenApiClientUtil
 {
     private readonly SingletonDictionary<SlackOpenApiClient> _clients;
