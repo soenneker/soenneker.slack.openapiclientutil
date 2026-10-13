@@ -45,7 +45,7 @@ public sealed class SlackOpenApiClientUtil : ISlackOpenApiClientUtil
 
     public ValueTask<SlackOpenApiClient> Get(CancellationToken cancellationToken = default)
     {
-        return Get(_configuration.GetValueStrict<string>("Slack:ApiKey"), _baseUrl, cancellationToken);
+        return Get(_configuration.GetStringStrict("Slack:ApiKey"), _baseUrl, cancellationToken);
     }
 
     public ValueTask<SlackOpenApiClient> Get(string apiKey, CancellationToken cancellationToken = default)
